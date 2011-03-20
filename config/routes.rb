@@ -14,7 +14,7 @@ SampleApp2::Application.routes.draw do
 
 #  match '/', :to => 'pages#home'
 
-#  match '/signup',  :to => 'users#new'
+  match '/signup',  :to => 'users#new'
 
 #  match '/show',  :to => 'users#show'
 
