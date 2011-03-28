@@ -7,6 +7,7 @@ describe UsersController do
 
     before(:each) do
       @user = Factory(:user)
+#      @user = User.find(params[:id])
     end
 
     it "should be successful" do
