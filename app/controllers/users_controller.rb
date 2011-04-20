@@ -49,8 +49,10 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    unless current_user == User.find(params[:id])
     User.find(params[:id]).destroy
     flash[:success] = "User destroyed."
+    end
     redirect_to users_path
   end
 
