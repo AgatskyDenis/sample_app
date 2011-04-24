@@ -4,6 +4,11 @@ SampleApp2::Application.routes.draw do
   resources :users
   resources :sessions, :only => [:new, :create, :destroy]
   resources :microposts, :only => [:create, :destroy]
+  
+#  resources :users do
+#    resources :microposts, :only => [:index]
+#  end
+
 #  get "users/new"
 
 #  get "pages/home"
